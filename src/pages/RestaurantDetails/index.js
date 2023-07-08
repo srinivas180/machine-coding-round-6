@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 
 import { RestaurantsContext } from "../../contexts/RestaurantsContext";
 
@@ -24,7 +25,12 @@ export function RestaurantDetails() {
 
     return (
         <div className="container">
-            <h1>{restaurant.name}</h1>
+            <div className="restaurant-header">
+                <Link to="/" className="restaurant-header__link">
+                    Go Home
+                </Link>
+                <h1>{restaurant.name}</h1>
+            </div>
             <div className="restaurant-details-container">
                 <div className="restaurant-details">
                     <div className="restaurant-details__dishes">

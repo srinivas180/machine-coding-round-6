@@ -1,3 +1,17 @@
+.restaurant-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.restaurant-header__link {
+    background-color: var(--primary-color);
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
 .restaurant-details-container {
     display: flex;
     justify-content: space-between;
