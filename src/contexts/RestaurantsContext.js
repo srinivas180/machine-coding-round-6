@@ -28,7 +28,6 @@ export function RestaurantsProvider({ children }) {
 
     const getAverageRating = (restaurant) => {
         let sum = restaurant.ratings.reduce((accumulator, currentReview) => {
-            // console.log(typeof currentReview.rating);
             return accumulator + Number(currentReview.rating);
         }, 0);
         let avgRating = sum / restaurant.ratings.length;
