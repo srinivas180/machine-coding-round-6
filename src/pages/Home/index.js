@@ -8,9 +8,8 @@ import "./index.css";
 
 export function Home() {
     const { restaurants } = useContext(RestaurantsContext);
-    const { cuisines } = useContext(CuisinesContext);
-
-    const [selectedCuisineId, setSelectedCuisineId] = useState();
+    const { cuisines, selectedCuisineId, setSelectedCuisineId } =
+        useContext(CuisinesContext);
 
     return (
         <div className="container">
